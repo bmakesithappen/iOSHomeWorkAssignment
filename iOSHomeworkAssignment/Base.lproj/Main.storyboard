@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Status View Controller-->
         <scene sceneID="8hQ-Mk-imW">
             <objects>
-                <viewController id="Tsx-z8-Aiy" sceneMemberID="viewController">
+                <viewController id="Tsx-z8-Aiy" customClass="HTTPStatusViewController" customModule="iOSHomeworkAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HSY-mb-oQf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
