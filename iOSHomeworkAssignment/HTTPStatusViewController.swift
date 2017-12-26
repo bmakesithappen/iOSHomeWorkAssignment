@@ -9,10 +9,13 @@
 import UIKit
 
 class HTTPStatusViewController: UIViewController {
+    
+    var httpStatus: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = String(describing: httpStatus)
         // Do any additional setup after loading the view.
     }
 

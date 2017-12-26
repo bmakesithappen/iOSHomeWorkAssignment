@@ -72,7 +72,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <segue destination="Tsx-z8-Aiy" kind="show" id="RDI-Oc-rQf"/>
+                                    <segue destination="Tsx-z8-Aiy" kind="show" identifier="openHTTPStatusViewController" id="RDI-Oc-rQf"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7F-dq-g51">
