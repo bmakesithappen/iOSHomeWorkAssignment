@@ -9,17 +9,22 @@
 import UIKit
 
 class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    let statusManager = HTTPStatusDataManager()
 
     @IBOutlet weak var HTTPStatusUIPicker: UIPickerView!
     
-    var pickerData = [NSString]()
-    
+    var pickerData: [String]?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.HTTPStatusUIPicker.delegate = self
+        self.HTTPStatusUIPicker.dataSource = self
+        
+        pickerData = statusManager.httpStatuses.map( {String($0) } )
 
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,14 +33,24 @@ class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 0
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 0
+        return pickerData?.count ?? 0
+        // like the tineray operator for optionals
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData?[row]
     }
 
     /*
+     
+     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+     category = Category(rawValue: pickerData[row])
+     
+     }
      
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
