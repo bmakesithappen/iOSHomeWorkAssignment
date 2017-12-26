@@ -35,6 +35,19 @@ class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         return 0
     }
 
+    /*
+     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "openAddItemPickerView" {
+            category = Category(rawValue: pickerData[self.itemPicker.selectedRow(inComponent: 0)])
+            let destination = segue.destination as! DetailItemViewController
+            destination.category = category
+            
+        }
+    }
+ 
+     */
 
 }
 
