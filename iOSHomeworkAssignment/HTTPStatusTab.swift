@@ -12,14 +12,27 @@ class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
 
     @IBOutlet weak var HTTPStatusUIPicker: UIPickerView!
     
+    var pickerData = [NSString]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 0
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 0
     }
 
 

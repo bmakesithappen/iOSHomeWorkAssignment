@@ -17,6 +17,21 @@ import UIKit
  
  */
 
-class HTTPStatusDataManager: NSString {
+enum HTTPSTatuses: String {
+    
+    case Test1
+    
+    case Test2
+    
+}
+
+class HTTPStatusDataManager: NSObject {
+
+    var httpstatuses: HTTPSTatuses?
+    
+    init(httpstatuses:HTTPSTatuses? = nil) {
+        self.httpstatuses = httpstatuses
+        super.init()
+    }
 
 }
