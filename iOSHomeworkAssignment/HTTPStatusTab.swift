@@ -8,8 +8,10 @@
 
 import UIKit
 
-class HTTPStatusTab: UIViewController {
+class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var HTTPStatusUIPicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
