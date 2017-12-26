@@ -38,6 +38,7 @@ class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerData?.count ?? 0
+        // we have to set the value in the viewDidLoad 
         // like the tineray operator for optionals
     }
     
@@ -58,8 +59,10 @@ class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
         if segue.identifier == "openHTTPStatusViewController" {
             let httpStatus = statusManager.httpStatuses[self.HTTPStatusUIPicker.selectedRow(inComponent: 0)]
+            let httpStatusDescription = statusManager.httpStatusesDescriptions[self.HTTPStatusUIPicker.selectedRow(inComponent: 0)]
             let destination = segue.destination as! HTTPStatusViewController
             destination.httpStatus = httpStatus
+            destination.httpStatusDescription = httpStatusDescription
             
         }
     }

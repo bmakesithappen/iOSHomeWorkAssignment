@@ -11,11 +11,20 @@ import UIKit
 class HTTPStatusViewController: UIViewController {
     
     var httpStatus: Int?
-
+    
+    var httpStatusDescription: String?
+    
+    @IBOutlet weak var httpStatusNumberLabel: UILabel!
+    
+    @IBOutlet weak var httpStatusDescriptionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = String(describing: httpStatus)
+        httpStatusNumberLabel.text = String(describing: httpStatus)
+        
+httpStatusDescriptionLabel.text = httpStatusDescription
+        
         // Do any additional setup after loading the view.
     }
 

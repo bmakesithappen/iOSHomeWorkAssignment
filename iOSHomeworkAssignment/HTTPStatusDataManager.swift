@@ -21,5 +21,7 @@ import UIKit
 class HTTPStatusDataManager: NSObject {
 
     var httpStatuses = [100, 101, 200]
+    
+    var httpStatusesDescriptions = ["Testfor100","Testfor101", "Testfor200"]
 
 }
