@@ -18,6 +18,8 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableview.delegate = self
         tableview.dataSource = self
         
+        downloadData()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -56,24 +58,22 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
- /*
+    // TODO: Review code below and be able to explain 
     func downloadData() {
-        
         let urlAddress = "https://now.httpbin.org/"
         let url = URL(string: urlAddress)
-        // 2
-        let downloadTask: URLSessionDataTask? = URLSession.shared.dataTask(with: url!, completionHandler: {(_ data: Data, _ response: URLResponse, _ error: Error?) -> Void in
-            let json = JSON(data)
+        if let nowData = NSData(contentsOf: url!) {
+            print (nowData)
+        let json = JSON(nowData)
             if let now = json["now"].dictionary {
-                for row in now.enumerated() {
-                   print(row)
-                }
+                print(now["slang_date"])
             }
-            } as! (Data?, URLResponse?, Error?) -> Void)
-        downloadTask?.resume()
+            
+        }
     }
-     
+ 
 
+     /*
      
      {"now": {"epoch": 1514409469.6526053, "slang_date": "today", "slang_time": "now", "iso8601": "2017-12-27T21:17:49.652605Z", "rfc2822": "Wed, 27 Dec 2017 21:17:49 GMT", "rfc3339": "2017-12-27T21:17:49.65Z"}, "urls": ["/", "/docs", "/when/:human-timestamp", "/parse/:machine-timestamp"]}
  
