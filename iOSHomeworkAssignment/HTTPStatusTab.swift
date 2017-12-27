@@ -38,7 +38,7 @@ class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerData?.count ?? 0
-        // we have to set the value in the viewDidLoad 
+        // we have to set the value in the viewDidLoad
         // like the tineray operator for optionals
     }
     
