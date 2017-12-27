@@ -70,7 +70,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgZ-j6-wqC">
                                 <rect key="frame" x="164" y="519" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Select"/>
                                 <connections>
                                     <segue destination="Tsx-z8-Aiy" kind="show" identifier="openHTTPStatusViewController" id="RDI-Oc-rQf"/>
                                 </connections>
