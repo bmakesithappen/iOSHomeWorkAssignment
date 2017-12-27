@@ -30,6 +30,8 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBAction func refreshButton(_ sender: Any) {
         
+        rows.append("new row")
+        tableview.reloadData()
     }
     
     // TODO: Review explanation of tableview below.  Breakdown how did we decide "row1 and row2" show.
