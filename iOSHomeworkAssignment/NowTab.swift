@@ -19,6 +19,13 @@ class NowTab: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var tableview: UITableView!
+    
+    @IBAction func refreshButton(_ sender: Any) {
+    }
+    
+    
  /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
