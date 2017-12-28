@@ -18,19 +18,19 @@ class HTTPStatusViewController: UIViewController {
     
     @IBOutlet weak var httpStatusDescriptionLabel: UILabel!
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         httpStatusNumberLabel.text = String(describing: httpStatus)
         
         httpStatusDescriptionLabel.text = httpStatusDescription
         
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if let catImage = getCatImage(code: httpStatus ?? 200) {
+            imageView.image = catImage
+        }
+        
     }
     
     func getCatImage(code: Int) -> UIImage? {
@@ -41,18 +41,7 @@ class HTTPStatusViewController: UIViewController {
         }
         
         return nil
-        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

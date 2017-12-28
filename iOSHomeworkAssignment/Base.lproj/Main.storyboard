@@ -176,6 +176,7 @@
                     <connections>
                         <outlet property="httpStatusDescriptionLabel" destination="pla-rm-dxf" id="nxm-Ah-aVn"/>
                         <outlet property="httpStatusNumberLabel" destination="kCG-zg-YUw" id="Xaq-Mi-oLg"/>
+                        <outlet property="imageView" destination="Hjy-Lb-ibJ" id="pNQ-Pc-9Zm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bL6-4z-6EK" userLabel="First Responder" sceneMemberID="firstResponder"/>
