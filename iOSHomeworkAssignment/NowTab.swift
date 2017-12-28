@@ -19,7 +19,11 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableview.delegate = self
         tableview.dataSource = self
         
-        downloadData()
+        load()
+        
+        
+    
+   //     downloadData()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -33,8 +37,12 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBAction func refreshButton(_ sender: Any) {
         
-   //     rows.append("new row")
+        rows.removeAll()
+        
+        downloadData()
+        
         tableview.reloadData()
+
     }
     
     // TODO: Review explanation of tableview below.  Breakdown how did we decide "row1 and row2" show.
@@ -73,12 +81,26 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return element.description
     }
 
+    func save(json:String) {
+        UserDefaults.standard.set(json, forKey: "JSON")
+    }
     
+        func load() {
+            if let json = UserDefaults.standard.string(forKey: "JSON"),
+                let jsonData = json.data(using: .utf8) {
+                let now = JSON(jsonData)
+                for (key, value) in now {
+                    rows.append((key, elementToString(value)))
+                }
+            }
+    }
+        
     func downloadData() {
         let urlAddress = "https://now.httpbin.org/"
         let url = URL(string: urlAddress)
         if let nowData = NSData(contentsOf: url!) {
             let now = JSON(nowData)["now"]
+            save(json: now.rawString() ?? "")
             for (key, value) in now {
                 rows.append((key, elementToString(value)))
             }
