@@ -33,6 +33,17 @@ class HTTPStatusViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func getCatImage(code: Int) -> UIImage? {
+        let urlAddress = "https://http.cat/" + String(code)
+        let url = URL(string: urlAddress)
+        if let catImageData = try? Data(contentsOf: url!) {
+            return UIImage(data: catImageData )
+        }
+        
+        return nil
+        
+    }
+    
 
     /*
     // MARK: - Navigation
