@@ -58,12 +58,16 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    // TODO: Review code below and be able to explain 
+    // TODO: Review code below and be able to explain
     func downloadData() {
         let urlAddress = "https://now.httpbin.org/"
         let url = URL(string: urlAddress)
+        // fetch data from source url
         if let nowData = NSData(contentsOf: url!) {
             print (nowData)
+        // process data take the rawdata(nowData) to be JSON
+            // TODO: Extract the data from the JSON and populate our array
+            // HINT: Enumerated Dictionary
         let json = JSON(nowData)
             if let now = json["now"].dictionary {
                 print(now["slang_date"])

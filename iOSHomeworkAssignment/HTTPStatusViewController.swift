@@ -23,7 +23,7 @@ class HTTPStatusViewController: UIViewController {
 
         httpStatusNumberLabel.text = String(describing: httpStatus)
         
-httpStatusDescriptionLabel.text = httpStatusDescription
+        httpStatusDescriptionLabel.text = httpStatusDescription
         
         // Do any additional setup after loading the view.
     }
