@@ -10,7 +10,8 @@ import UIKit
 
 class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-    var rows = ["test1", "test2", "test3"]
+    var rows = [(String, String)]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBAction func refreshButton(_ sender: Any) {
         
-        rows.append("new row")
+   //     rows.append("new row")
         tableview.reloadData()
     }
     
@@ -51,33 +52,41 @@ class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let title = rows[indexPath.row]
+        let title = rows[indexPath.row].0
         cell.textLabel?.text = title
+        
+        let detail = rows[indexPath.row].1
+        cell.detailTextLabel?.text = detail
         
         return cell
         
     }
     
-    // TODO: Review code below and be able to explain
+    func elementToString(_ element: JSON) -> String {
+        if let string = element.string {
+            return string
+        }
+        
+        if let number = element.number as? Double {
+            return String(number)
+        }
+        return element.description
+    }
+
+    
     func downloadData() {
         let urlAddress = "https://now.httpbin.org/"
         let url = URL(string: urlAddress)
-        // fetch data from source url
         if let nowData = NSData(contentsOf: url!) {
-            print (nowData)
-        // process data take the rawdata(nowData) to be JSON
-            // TODO: Extract the data from the JSON and populate our array
-            // HINT: Enumerated Dictionary
-        let json = JSON(nowData)
-            if let now = json["now"].dictionary {
-                print(now["slang_date"])
+            let now = JSON(nowData)["now"]
+            for (key, value) in now {
+                rows.append((key, elementToString(value)))
             }
-            
         }
     }
- 
-
-     /*
+        
+/*
+   
      
      {"now": {"epoch": 1514409469.6526053, "slang_date": "today", "slang_time": "now", "iso8601": "2017-12-27T21:17:49.652605Z", "rfc2822": "Wed, 27 Dec 2017 21:17:49 GMT", "rfc3339": "2017-12-27T21:17:49.65Z"}, "urls": ["/", "/docs", "/when/:human-timestamp", "/parse/:machine-timestamp"]}
  
