@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE5410AB1FEC5C950055A9E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5410AA1FEC5C950055A9E0 /* AppDelegate.swift */; };
 		DE5410AD1FEC5C950055A9E0 /* NowTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5410AC1FEC5C950055A9E0 /* NowTab.swift */; };
-		DE5410AF1FEC5C950055A9E0 /* HTTPStatusTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5410AE1FEC5C950055A9E0 /* HTTPStatusTab.swift */; };
+		DE5410AF1FEC5C950055A9E0 /* HTTPStatusTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5410AE1FEC5C950055A9E0 /* HTTPStatusTabViewController.swift */; };
 		DE5410B21FEC5C950055A9E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5410B01FEC5C950055A9E0 /* Main.storyboard */; };
 		DE5410B41FEC5C950055A9E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5410B31FEC5C950055A9E0 /* Assets.xcassets */; };
 		DE5410B71FEC5C950055A9E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5410B51FEC5C950055A9E0 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		DE5410A71FEC5C950055A9E0 /* iOSHomeworkAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSHomeworkAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5410AA1FEC5C950055A9E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5410AC1FEC5C950055A9E0 /* NowTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTab.swift; sourceTree = "<group>"; };
-		DE5410AE1FEC5C950055A9E0 /* HTTPStatusTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusTab.swift; sourceTree = "<group>"; };
+		DE5410AE1FEC5C950055A9E0 /* HTTPStatusTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusTabViewController.swift; sourceTree = "<group>"; };
 		DE5410B11FEC5C950055A9E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE5410B31FEC5C950055A9E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5410B61FEC5C950055A9E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				DE5410AA1FEC5C950055A9E0 /* AppDelegate.swift */,
 				DE5410AC1FEC5C950055A9E0 /* NowTab.swift */,
 				DE5410C21FF2B4360055A9E0 /* HTTPStatusDataManager.swift */,
-				DE5410AE1FEC5C950055A9E0 /* HTTPStatusTab.swift */,
+				DE5410AE1FEC5C950055A9E0 /* HTTPStatusTabViewController.swift */,
 				DE5410C01FED69C90055A9E0 /* HTTPStatusViewController.swift */,
 				DEB8CDFB1FF416C100ED1100 /* SwiftyJSON.swift */,
 				DE5410B01FEC5C950055A9E0 /* Main.storyboard */,
@@ -150,7 +150,7 @@
 			files = (
 				DE5410C11FED69C90055A9E0 /* HTTPStatusViewController.swift in Sources */,
 				DE5410C31FF2B4360055A9E0 /* HTTPStatusDataManager.swift in Sources */,
-				DE5410AF1FEC5C950055A9E0 /* HTTPStatusTab.swift in Sources */,
+				DE5410AF1FEC5C950055A9E0 /* HTTPStatusTabViewController.swift in Sources */,
 				DEB8CDFC1FF416C100ED1100 /* SwiftyJSON.swift in Sources */,
 				DE5410AB1FEC5C950055A9E0 /* AppDelegate.swift in Sources */,
 				DE5410AD1FEC5C950055A9E0 /* NowTab.swift in Sources */,

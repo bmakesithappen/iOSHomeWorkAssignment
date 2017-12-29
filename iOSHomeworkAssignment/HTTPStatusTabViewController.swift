@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HTTPStatusTab: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class HTTPStatusTabViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     let statusManager = HTTPStatusDataManager()
 
