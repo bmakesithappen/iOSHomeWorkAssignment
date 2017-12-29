@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NowTab: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     var rows = [(String, String)]()
     
