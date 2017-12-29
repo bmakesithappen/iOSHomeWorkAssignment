@@ -31,6 +31,9 @@ class HTTPStatusTabViewController: UIViewController, UIPickerViewDelegate, UIPic
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // MARK: UIPickerView
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -44,6 +47,8 @@ class HTTPStatusTabViewController: UIViewController, UIPickerViewDelegate, UIPic
         return pickerData?[row]
     }
 
+    // MARK: Segue to HTTPStatusViewController 
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openHTTPStatusViewController" {
             let httpStatus = statusManager.httpStatuses[self.HTTPStatusUIPicker.selectedRow(inComponent: 0)]

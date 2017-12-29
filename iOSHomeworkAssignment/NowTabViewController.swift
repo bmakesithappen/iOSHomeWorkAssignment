@@ -38,7 +38,8 @@ class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableview.reloadData()
 
     }
-
+    // MARK: TableView
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -69,7 +70,9 @@ class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         return element.description
     }
- 
+    
+    // MARK: Data Persistance Functions
+
     func save(json:String) {
         UserDefaults.standard.set(json, forKey: "JSON")
     }
@@ -83,6 +86,8 @@ class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
+
+    // MARK: Fetch Data Function
 
     func downloadData() {
         let urlAddress = "https://now.httpbin.org/"

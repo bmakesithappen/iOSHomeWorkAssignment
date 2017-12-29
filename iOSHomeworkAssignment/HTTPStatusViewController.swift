@@ -30,9 +30,10 @@ class HTTPStatusViewController: UIViewController {
         if let catImage = getCatImage(code: httpStatus ?? 200) {
             imageView.image = catImage
         }
-
     }
 
+    // MARK: Image Function
+    
     func getCatImage(code: Int) -> UIImage? {
         let urlAddress = "https://http.cat/" + String(code)
         let url = URL(string: urlAddress)
