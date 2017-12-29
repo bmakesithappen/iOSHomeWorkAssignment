@@ -21,7 +21,6 @@ import UIKit
 class HTTPStatusDataManager: NSObject {
 
     var httpStatuses = [100, 101, 200, 202, 204, 300, 305, 408, 417, 450, 500, 599]
-    
-    var httpStatusesDescriptions = ["Continue","Switching Protocols", "OK", "Accepted", "No Content", "Multiple Choices", "Use Proxy", "Request Timeout", "Exception Failed", "Blocked by Windows Parental Controls", "Internal Server Error", "Network Connection Server Error" ]
 
+    var httpStatusesDescriptions = ["Continue","Switching Protocols", "OK", "Accepted", "No Content", "Multiple Choices", "Use Proxy", "Request Timeout", "Exception Failed", "Blocked by Windows Parental Controls", "Internal Server Error", "Network Connection Server Error"]
 }
