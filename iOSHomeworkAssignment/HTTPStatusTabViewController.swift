@@ -22,6 +22,7 @@ class HTTPStatusTabViewController: UIViewController, UIPickerViewDelegate, UIPic
         self.HTTPStatusUIPicker.delegate = self
         self.HTTPStatusUIPicker.dataSource = self
 
+        // #review: mapping 
         pickerData = statusManager.httpStatuses.map( {String($0) } )
 
     }

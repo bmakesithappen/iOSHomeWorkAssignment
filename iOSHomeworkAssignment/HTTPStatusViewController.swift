@@ -33,6 +33,7 @@ class HTTPStatusViewController: UIViewController {
     }
 
     // MARK: Image Function
+    // review: line 40 fetching data from internet not thread safe user experience.
     
     func getCatImage(code: Int) -> UIImage? {
         let urlAddress = "https://http.cat/" + String(code)
