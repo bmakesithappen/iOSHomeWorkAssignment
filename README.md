@@ -44,6 +44,18 @@ code cannot be copy-and-pasted from any other project or source
 ## Resources that were helpful
 
 
+[iOS Development with Swift Tutorial - 17 - Multiple Views or Screens]
+[iOS Development with Swift Tutorial - 18 - Adding Brains to the View]
+[iOS Development with Swift Tutorial - 19 - StoryBoards and Scenes[
+[Codable in Swift 4.0]
+[Saw list of HTTP codes set as ranges]
+[Loop through Dictionary](https://iswift.org/cookbook/loop-through-dictionary)
+[Cookbook Using NSURLSession](https://www.raywenderlich.com/67081/cookbook-using-nsurlsession)
+[How to pull internet data in iOS Apps](https://swiftludus.org/how-to-pull-internet-data-in-ios-apps/)
+[UITableView Tutorial for beginners](http://www.thomashanning.com/uitableview-tutorial-for-beginners/)
+TableViews Thinkful Lesson
+
+
 
 
 

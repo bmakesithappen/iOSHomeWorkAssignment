@@ -9,6 +9,8 @@
 import UIKit
 
 class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableview: UITableView!
 
     var rows = [(String, String)]()
 
@@ -26,8 +28,6 @@ class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
 
     }
-
-    @IBOutlet weak var tableview: UITableView!
 
     @IBAction func refreshButton(_ sender: Any) {
 
