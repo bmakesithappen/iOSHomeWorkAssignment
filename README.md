@@ -39,7 +39,10 @@ https://http.cat/302
 
 
 Requirements:
-code cannot be copy-and-pasted from any other project or source\
+code cannot be copy-and-pasted from any other project or source
+
+## Resources that were helpful
+
 
 
 

@@ -43,6 +43,4 @@ class HTTPStatusViewController: UIViewController {
         }
         return nil
     }
-
-
 }
