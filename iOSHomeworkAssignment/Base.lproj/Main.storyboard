@@ -181,7 +181,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTTPStatus#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCG-zg-YUw">
                                 <rect key="frame" x="30" y="118" width="300" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="CeT-BG-Fiz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="CeT-BG-Fiz"/>
                                     <constraint firstAttribute="height" constant="21" id="ZZ9-Za-2pn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -199,16 +199,13 @@
                         <constraints>
                             <constraint firstItem="Hjy-Lb-ibJ" firstAttribute="top" secondItem="HSY-mb-oQf" secondAttribute="top" constant="282" id="1qU-6W-1GI"/>
                             <constraint firstItem="Hjy-Lb-ibJ" firstAttribute="leading" secondItem="x5w-fg-JvJ" secondAttribute="leading" constant="44" id="6xF-tD-P6I"/>
-                            <constraint firstItem="kCG-zg-YUw" firstAttribute="leading" secondItem="x5w-fg-JvJ" secondAttribute="leading" constant="30" id="724-em-XoX"/>
                             <constraint firstItem="kCG-zg-YUw" firstAttribute="centerX" secondItem="Hjy-Lb-ibJ" secondAttribute="centerX" id="DwX-9h-9g8"/>
                             <constraint firstItem="Hjy-Lb-ibJ" firstAttribute="top" secondItem="pla-rm-dxf" secondAttribute="bottom" constant="52" id="GKt-rx-7LO"/>
-                            <constraint firstItem="x5w-fg-JvJ" firstAttribute="trailing" secondItem="pla-rm-dxf" secondAttribute="trailing" constant="96" id="Ke5-Lr-cCc"/>
                             <constraint firstItem="Hjy-Lb-ibJ" firstAttribute="leading" secondItem="x5w-fg-JvJ" secondAttribute="leading" constant="44" id="NFa-d7-6gj"/>
                             <constraint firstItem="pla-rm-dxf" firstAttribute="leading" secondItem="x5w-fg-JvJ" secondAttribute="leading" constant="96" id="Uog-vl-CqR"/>
                             <constraint firstItem="kCG-zg-YUw" firstAttribute="top" secondItem="HSY-mb-oQf" secondAttribute="top" constant="118" id="W3M-8c-237"/>
                             <constraint firstItem="x5w-fg-JvJ" firstAttribute="trailing" secondItem="Hjy-Lb-ibJ" secondAttribute="trailing" constant="58" id="WGS-MM-G6e"/>
                             <constraint firstItem="Hjy-Lb-ibJ" firstAttribute="leading" secondItem="HSY-mb-oQf" secondAttribute="leading" constant="44" id="XgN-1G-hf0"/>
-                            <constraint firstItem="kCG-zg-YUw" firstAttribute="leading" secondItem="HSY-mb-oQf" secondAttribute="leading" constant="30" id="ZOe-GI-XIL"/>
                             <constraint firstItem="Hjy-Lb-ibJ" firstAttribute="top" secondItem="HSY-mb-oQf" secondAttribute="top" constant="282" id="b9w-ux-Pfx"/>
                             <constraint firstItem="kCG-zg-YUw" firstAttribute="top" secondItem="x5w-fg-JvJ" secondAttribute="top" constant="54" id="biq-qE-e9f"/>
                             <constraint firstItem="x5w-fg-JvJ" firstAttribute="trailing" secondItem="Hjy-Lb-ibJ" secondAttribute="trailing" constant="58" id="d8k-6B-5XO"/>
@@ -218,9 +215,7 @@
                             <constraint firstItem="kCG-zg-YUw" firstAttribute="top" secondItem="HSY-mb-oQf" secondAttribute="top" constant="118" id="k08-bz-Ljn"/>
                             <constraint firstItem="pla-rm-dxf" firstAttribute="centerX" secondItem="HSY-mb-oQf" secondAttribute="centerX" id="l8e-B9-W5a"/>
                             <constraint firstItem="Hjy-Lb-ibJ" firstAttribute="centerX" secondItem="kCG-zg-YUw" secondAttribute="centerX" id="qTf-Er-i8z"/>
-                            <constraint firstItem="kCG-zg-YUw" firstAttribute="leading" secondItem="x5w-fg-JvJ" secondAttribute="leading" constant="30" id="szp-XM-3A9"/>
                             <constraint firstItem="pla-rm-dxf" firstAttribute="top" secondItem="kCG-zg-YUw" secondAttribute="bottom" constant="71" id="wBm-aG-gJZ"/>
-                            <constraint firstItem="x5w-fg-JvJ" firstAttribute="trailing" secondItem="kCG-zg-YUw" secondAttribute="trailing" constant="45" id="yfB-wI-iJ1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x5w-fg-JvJ"/>
                     </view>
