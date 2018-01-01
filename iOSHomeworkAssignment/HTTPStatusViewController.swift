@@ -23,7 +23,7 @@ class HTTPStatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        httpStatusNumberLabel.text = String(describing: httpStatus)
+        httpStatusNumberLabel.text = String(describing: httpStatus ?? 200)
 
         httpStatusDescriptionLabel.text = httpStatusDescription
 
