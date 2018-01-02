@@ -88,7 +88,6 @@ class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     // MARK: Fetch Data Function
-    // review: line 95 fetching data from internet not thread safe user experience. 
     func downloadData() {
         let urlAddress = "https://now.httpbin.org/"
         let url = URL(string: urlAddress)
