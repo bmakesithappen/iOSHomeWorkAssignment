@@ -51,7 +51,7 @@ code cannot be copy-and-pasted from any other project or source
 [Saw list of HTTP codes set as ranges]
 [Loop through Dictionary](https://iswift.org/cookbook/loop-through-dictionary)
 [Cookbook Using NSURLSession](https://www.raywenderlich.com/67081/cookbook-using-nsurlsession)
-[How to pull internet data in iOS Apps](https://swiftludus.org/how-to-pull-internet-data-in-ios-apps/)
+[How to pull internet data in iOS Apps](https://swiftludus.org/how-to-pull-internet-data-in-ios-apps )
 [UITableView Tutorial for beginners](http://www.thomashanning.com/uitableview-tutorial-for-beginners/)
 TableViews Thinkful Lesson
 

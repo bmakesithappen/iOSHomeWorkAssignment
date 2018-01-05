@@ -19,7 +19,7 @@ class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         tableview.delegate = self
         tableview.dataSource = self
-
+        
         load()
 
     }
@@ -84,6 +84,8 @@ class NowTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
             for (key, value) in now {
                 rows.append((key, elementToString(value)))
             }
+        } else {
+            downloadData()
         }
     }
 
