@@ -57,13 +57,11 @@ code cannot be copy-and-pasted from any other project or source
 [Loop through Dictionary](https://iswift.org/cookbook/loop-through-dictionary)
 
 [Cookbook Using NSURLSession](https://www.raywenderlich.com/67081/cookbook-using-nsurlsession)
-<<<<<<< HEAD
+
 [How to pull internet data in iOS Apps](https://swiftludus.org/how-to-pull-internet-data-in-ios-apps )
-=======
 
 [How to pull internet data in iOS Apps](https://swiftludus.org/how-to-pull-internet-data-in-ios-apps/)
 
->>>>>>> 4c88310ee05d04fcd4e3daacf2036b92d0b95b93
 [UITableView Tutorial for beginners](http://www.thomashanning.com/uitableview-tutorial-for-beginners/)
 
 TableViews Thinkful Lesson
