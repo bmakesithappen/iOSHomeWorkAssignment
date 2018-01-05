@@ -44,15 +44,15 @@ code cannot be copy-and-pasted from any other project or source
 ## Resources that were helpful
 
 
-[iOS Development with Swift Tutorial - 17 - Multiple Views or Screens]
+[iOS Development with Swift Tutorial - 17 - Multiple Views or Screens](https://www.youtube.com/watch?v=B9yV4YeEmNA)
 
-[iOS Development with Swift Tutorial - 18 - Adding Brains to the View]
+[iOS Development with Swift Tutorial - 18 - Adding Brains to the View](https://www.youtube.com/watch?v=EdRSoh1Y9Hw)
 
-[iOS Development with Swift Tutorial - 19 - StoryBoards and Scenes]
+[iOS Development with Swift Tutorial - 19 - StoryBoards and Scenes](https://www.youtube.com/watch?v=Mhko_0ixnqo)
 
-[Codable in Swift 4.0]
+[Codable in Swift 4.0](https://medium.com/@sarunw/codable-in-swift-4-0-1a12e38599d8)
 
-[Saw list of HTTP codes set as ranges]
+[Saw list of HTTP codes set as ranges](https://github.com/rhodgkins/SwiftHTTPStatusCodes/blob/master/Sources/HTTPStatusCodes%2BExtensions.swift)
 
 [Loop through Dictionary](https://iswift.org/cookbook/loop-through-dictionary)
 
@@ -63,6 +63,8 @@ code cannot be copy-and-pasted from any other project or source
 [UITableView Tutorial for beginners](http://www.thomashanning.com/uitableview-tutorial-for-beginners/)
 
 TableViews Thinkful Lesson
+
+
 
 
 
